@@ -8,4 +8,10 @@ task :console do
   
   # Open a Pry session
   Pry.start
+
+desc "Start the server"
+task :server do
+  exec "return -b 'rackup config.ru'"
+end
+
 end
